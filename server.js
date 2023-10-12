@@ -5,7 +5,7 @@ const client=require("mongodb").MongoClient;
 
 // })
 let dbinstance;
-client.connect("mongodb://127.0.0.1:27017",{}).then((data)=>{
+client.connect("mongodb+srv://userroot:Password4001@cluster0.2fa6kep.mongodb.net/?retryWrites=true&w=majority",{}).then((data)=>{
     console.log("Database connected");
  dbinstance= data.db("Project")
 
